@@ -1,0 +1,14 @@
+//
+//  Primus-EmitterTests-Prefix.pch
+//  Primus-Emitter
+//
+//  Created by Nuno Sousa on 19/02/14.
+//  Copyright (c) 2014 Seegno. All rights reserved.
+//
+
+#define EXP_SHORTHAND
+#define MOCKITO_SHORTHAND
+
+#import <Specta/Specta.h>
+#import <Expecta/Expecta.h>
+#import <OCMockito/OCMockito.h>

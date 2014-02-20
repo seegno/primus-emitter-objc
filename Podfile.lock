@@ -1,0 +1,50 @@
+PODS:
+  - BlocksKit/DynamicDelegate (2.0.0):
+    - libffi
+  - Emitter (0.0.4):
+    - BlocksKit/DynamicDelegate (~> 2.0.0)
+    - SLObjectiveCRuntimeAdditions (~> 1.1.2)
+  - Expecta (0.2.3)
+  - libextobjc/EXTScope (0.4):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/RuntimeExtensions (0.4)
+  - NSTimer-Blocks (0.0.1)
+  - OCHamcrest (3.0.1)
+  - OCMockito (1.1.0):
+    - OCHamcrest (~> 3.0)
+  - Primus (0.0.1):
+    - Emitter
+    - libextobjc/EXTScope
+    - NSTimer-Blocks
+    - Reachability
+  - Reachability (3.1.1)
+  - SLObjectiveCRuntimeAdditions (1.1.2)
+  - Specta (0.2.1)
+
+DEPENDENCIES:
+  - Emitter (from `~/Projects/emitter-objc`)
+  - Expecta
+  - OCMockito
+  - Primus (from `~/Projects/primus-objc`)
+  - Specta
+
+EXTERNAL SOURCES:
+  Emitter:
+    :path: ~/Projects/emitter-objc
+  Primus:
+    :path: ~/Projects/primus-objc
+
+SPEC CHECKSUMS:
+  BlocksKit: b29ee3f28ba06a09f5c64987314ce5b75b2c3962
+  Emitter: 7a64f6dbe8ca2be513ab154719e85fc0fff6be8d
+  Expecta: dbc4a27fabb853bdd2e907e33f11ee43a9a47d0c
+  libextobjc: 2c9fc8226f0f38e562587f65172f93f0c9b4a47a
+  NSTimer-Blocks: 99f52d61c29429d7e8ef0c82e596f317addb9421
+  OCHamcrest: 782c52ae8c673e5d6060a65005cfd26d20d519ba
+  OCMockito: 317fa0cf75c9b0d73d2be335789c556537be7fd2
+  Primus: b9ef8bbb2b21859d69a555ed4828c418adc769d2
+  Reachability: be4883bb93f31e38266ae3365e5600a317aae735
+  SLObjectiveCRuntimeAdditions: 3fa6a14b9d09ed386180b19de1267bb1cd8a9aad
+  Specta: 2d06220591110c6d9757d8be8ecf8e63aa40dc2a
+
+COCOAPODS: 0.29.0
