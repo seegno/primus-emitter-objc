@@ -3,8 +3,8 @@ inhibit_all_warnings!
 
 pod 'Emitter', :path => '~/Projects/emitter-objc'
 
-target :'PrimusEmitterTests' do
-    link_with 'PrimusEmitter', 'PrimusEmitterTests'
+target :'PrimusEmitterTests', :exclusive => true do
+    pod 'Emitter', :path => '~/Projects/emitter-objc'
 
     pod 'Primus', :path => '~/Projects/primus-objc'
     pod 'Specta'
