@@ -22,17 +22,11 @@ PODS:
   - Specta (0.2.1)
 
 DEPENDENCIES:
-  - Emitter (from `~/Projects/emitter-objc`)
+  - Emitter
   - Expecta
   - OCMockito
-  - Primus (from `~/Projects/primus-objc`)
+  - Primus
   - Specta
-
-EXTERNAL SOURCES:
-  Emitter:
-    :path: ~/Projects/emitter-objc
-  Primus:
-    :path: ~/Projects/primus-objc
 
 SPEC CHECKSUMS:
   BlocksKit: b29ee3f28ba06a09f5c64987314ce5b75b2c3962
