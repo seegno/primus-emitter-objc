@@ -25,7 +25,7 @@
 
 - (void)bindEvents
 {
-    [_primus on:@"data" listener:^(NSDictionary *packet) {
+    [_primus on:@"data" listener:^(NSDictionary *packet, id raw) {
         if (! [packet[@"type"] isKindOfClass:NSNumber.class]) {
             return;
         }
@@ -38,8 +38,9 @@
 
 - (void)onEvent:(NSDictionary *)packet
 {
-    NSString *name = [packet[@"data"] firstObject];
-    NSMutableArray *args = [NSMutableArray arrayWithArray:[packet[@"data"] subarrayWithRange:NSMakeRange(1, [packet[@"data"] count] - 1)]];
+    NSArray *data = packet[@"data"];
+    NSString *name = [data firstObject];
+    NSMutableArray *args = [NSMutableArray arrayWithArray:[data subarrayWithRange:NSMakeRange(1, data.count - 1)]];
 
     if (packet[@"id"]) {
         AckBlock ack = ^{
