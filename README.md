@@ -30,3 +30,7 @@ pod 'PrimusEmitter'
 	}];
 }
 ```
+
+## Credits
+
+Many thanks to Jonathan Brumley, creator of the original [primus-emitter](https://github.com/cayasso/primus-emitter) plugin.
