@@ -2,6 +2,8 @@ Primus-Emitter-Objc is an implementation of the [Primus-Emitter](https://github.
 
 The library is fully unit tested using [Specta](https://github.com/specta/specta), [Expecta](https://github.com/specta/expecta) and [OCMockito](https://github.com/jonreid/OCMockito).
 
+[![Build Status](https://travis-ci.org/seegno/primus-emitter-objc.png)](https://travis-ci.org/seegno/primus-emitter-objc)
+
 ## Use it
 
 ```ruby
