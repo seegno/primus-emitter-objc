@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                  = "PrimusEmitter"
-  s.version               = "0.0.1"
+  s.version               = "0.0.2"
   s.summary               = "Simple emitter wrapper for primus-objc"
   s.homepage              = "https://github.com/seegno/primus-emitter-objc"
   s.author                = "Seegno"
