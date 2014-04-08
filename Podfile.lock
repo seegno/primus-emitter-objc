@@ -1,18 +1,17 @@
 PODS:
-  - BlocksKit/DynamicDelegate (2.0.0):
-    - libffi
-  - Emitter (0.0.5):
-    - BlocksKit/DynamicDelegate (~> 2.0.0)
-    - SLObjectiveCRuntimeAdditions (~> 1.1.2)
-  - Expecta (0.2.3)
+  - BlocksKit/DynamicDelegate (2.2.2)
+  - Emitter (HEAD based on 0.0.6):
+    - BlocksKit/DynamicDelegate
+    - SLObjectiveCRuntimeAdditions
+  - Expecta (0.3.0)
   - libextobjc/EXTScope (0.4):
     - libextobjc/RuntimeExtensions
   - libextobjc/RuntimeExtensions (0.4)
   - NSTimer-Blocks (0.0.1)
   - OCHamcrest (3.0.1)
-  - OCMockito (1.1.0):
+  - OCMockito (1.2.0):
     - OCHamcrest (~> 3.0)
-  - Primus (0.0.2):
+  - Primus (0.0.3):
     - Emitter
     - libextobjc/EXTScope
     - NSTimer-Blocks
@@ -22,23 +21,23 @@ PODS:
   - Specta (0.2.1)
 
 DEPENDENCIES:
-  - Emitter
+  - Emitter (HEAD)
   - Expecta
   - OCMockito
   - Primus
   - Specta
 
 SPEC CHECKSUMS:
-  BlocksKit: b29ee3f28ba06a09f5c64987314ce5b75b2c3962
-  Emitter: 3a879b431df550a28ce78afd7f8029f1cdc04668
-  Expecta: dbc4a27fabb853bdd2e907e33f11ee43a9a47d0c
+  BlocksKit: 125e4e69a62e3b85bacc5175737dae000b00b9fb
+  Emitter: 1bd8c4532f0128f6f838f8b4f1233b2f3cafc22b
+  Expecta: 322f1dc42610106a5ba9871b4924cf1635d80833
   libextobjc: 2c9fc8226f0f38e562587f65172f93f0c9b4a47a
-  NSTimer-Blocks: 99f52d61c29429d7e8ef0c82e596f317addb9421
+  NSTimer-Blocks: 5b1ac1e6f4fb733b41521ac449077c431413be69
   OCHamcrest: 782c52ae8c673e5d6060a65005cfd26d20d519ba
-  OCMockito: 317fa0cf75c9b0d73d2be335789c556537be7fd2
-  Primus: d752b69ee379779e2bc0a2706eb5a39d146b41b2
+  OCMockito: 050fca9528760faa8b5fafc82faad9d54f0864c0
+  Primus: 22a60811286dc5c125f59cc17b8b7baeed2f5aac
   Reachability: be4883bb93f31e38266ae3365e5600a317aae735
   SLObjectiveCRuntimeAdditions: 3fa6a14b9d09ed386180b19de1267bb1cd8a9aad
   Specta: 2d06220591110c6d9757d8be8ecf8e63aa40dc2a
 
-COCOAPODS: 0.29.0
+COCOAPODS: 0.31.1

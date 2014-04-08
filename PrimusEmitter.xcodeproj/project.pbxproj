@@ -30,10 +30,8 @@
 
 /* Begin PBXFileReference section */
 		071B6693C1D3420EA9283F3C /* libPods-PrimusEmitterTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PrimusEmitterTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1608F007F8164FB3BA5F0FE3 /* Pods-Primus-EmitterTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Primus-EmitterTests.xcconfig"; path = "Pods/Pods-Primus-EmitterTests.xcconfig"; sourceTree = "<group>"; };
 		7F7C498F1AC244C5A7A7AD56 /* Pods-PrimusEmitterTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrimusEmitterTests.xcconfig"; path = "Pods/Pods-PrimusEmitterTests.xcconfig"; sourceTree = "<group>"; };
 		8FFF4810252544D58B073C73 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
-		B5CBCF3AED33486A9B1D500B /* libPods-Primus-EmitterTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Primus-EmitterTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5682C6318B50B4200F5D583 /* PrimusEmitter.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = PrimusEmitter.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5682C6618B50B4200F5D583 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		E5682C6918B50B4200F5D583 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -80,11 +78,10 @@
 			isa = PBXGroup;
 			children = (
 				E5682C6C18B50B4200F5D583 /* PrimusEmitter */,
-				E5682C7D18B50B4200F5D583 /* Primus-EmitterTests */,
+				E5682C7D18B50B4200F5D583 /* PrimusEmitterTests */,
 				E5682C6518B50B4200F5D583 /* Frameworks */,
 				E5682C6418B50B4200F5D583 /* Products */,
 				E5682C9D18B6328300F5D583 /* PrimusEmitter.podspec */,
-				1608F007F8164FB3BA5F0FE3 /* Pods-Primus-EmitterTests.xcconfig */,
 				8FFF4810252544D58B073C73 /* Pods.xcconfig */,
 				7F7C498F1AC244C5A7A7AD56 /* Pods-PrimusEmitterTests.xcconfig */,
 			);
@@ -105,7 +102,6 @@
 				E5682C6618B50B4200F5D583 /* Cocoa.framework */,
 				E5682C7718B50B4200F5D583 /* XCTest.framework */,
 				E5682C6818B50B4200F5D583 /* Other Frameworks */,
-				B5CBCF3AED33486A9B1D500B /* libPods-Primus-EmitterTests.a */,
 				E7E82B24E3224DD4A5BD17BB /* libPods.a */,
 				071B6693C1D3420EA9283F3C /* libPods-PrimusEmitterTests.a */,
 			);
@@ -140,13 +136,12 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		E5682C7D18B50B4200F5D583 /* Primus-EmitterTests */ = {
+		E5682C7D18B50B4200F5D583 /* PrimusEmitterTests */ = {
 			isa = PBXGroup;
 			children = (
 				E5682C7E18B50B4200F5D583 /* Supporting Files */,
 				E5682C8318B50B4200F5D583 /* PrimusEmitterTest.m */,
 			);
-			name = "Primus-EmitterTests";
 			path = PrimusEmitterTests;
 			sourceTree = "<group>";
 		};

@@ -1,10 +1,10 @@
 platform :osx, '10.9'
 inhibit_all_warnings!
 
-pod 'Emitter'
+pod 'Emitter', :head
 
 target :'PrimusEmitterTests', :exclusive => true do
-    pod 'Emitter'
+    pod 'Emitter', :head
 
     pod 'Primus'
     pod 'Specta'
