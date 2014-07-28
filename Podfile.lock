@@ -1,24 +1,24 @@
 PODS:
-  - BlocksKit/DynamicDelegate (2.2.2)
-  - Emitter (HEAD based on 0.0.6):
+  - BlocksKit/DynamicDelegate (2.2.3)
+  - Emitter (HEAD based on 0.0.7):
     - BlocksKit/DynamicDelegate
-    - SLObjectiveCRuntimeAdditions
-  - Expecta (0.3.0)
+  - Expecta (0.3.1)
   - libextobjc/EXTScope (0.4):
     - libextobjc/RuntimeExtensions
   - libextobjc/RuntimeExtensions (0.4)
   - NSTimer-Blocks (0.0.1)
-  - OCHamcrest (3.0.1)
-  - OCMockito (1.2.0):
-    - OCHamcrest (~> 3.0)
+  - OCHamcrest (4.0.1)
+  - OCMockito (1.3.0):
+    - OCHamcrest (~> 4.0)
+    - TPWeakProxy (~> 1.0)
   - Primus (0.0.3):
     - Emitter
     - libextobjc/EXTScope
     - NSTimer-Blocks
     - Reachability
   - Reachability (3.1.1)
-  - SLObjectiveCRuntimeAdditions (1.1.2)
   - Specta (0.2.1)
+  - TPWeakProxy (1.0.0)
 
 DEPENDENCIES:
   - Emitter (HEAD)
@@ -28,16 +28,16 @@ DEPENDENCIES:
   - Specta
 
 SPEC CHECKSUMS:
-  BlocksKit: 125e4e69a62e3b85bacc5175737dae000b00b9fb
-  Emitter: 1bd8c4532f0128f6f838f8b4f1233b2f3cafc22b
-  Expecta: 322f1dc42610106a5ba9871b4924cf1635d80833
-  libextobjc: 2c9fc8226f0f38e562587f65172f93f0c9b4a47a
-  NSTimer-Blocks: 5b1ac1e6f4fb733b41521ac449077c431413be69
-  OCHamcrest: 782c52ae8c673e5d6060a65005cfd26d20d519ba
-  OCMockito: 050fca9528760faa8b5fafc82faad9d54f0864c0
-  Primus: 22a60811286dc5c125f59cc17b8b7baeed2f5aac
-  Reachability: be4883bb93f31e38266ae3365e5600a317aae735
-  SLObjectiveCRuntimeAdditions: 3fa6a14b9d09ed386180b19de1267bb1cd8a9aad
-  Specta: 2d06220591110c6d9757d8be8ecf8e63aa40dc2a
+  BlocksKit: 07c8a80f04275efac6a5f8b973782489c083a182
+  Emitter: be2820bd9ef5a3644da3cb34d9ec19e44c1213e6
+  Expecta: 03aabd0a89d8dea843baecb19a7fd7466a69a31d
+  libextobjc: ba42e4111f433273a886cd54f0ddaddb7f62f82f
+  NSTimer-Blocks: 0a653b84ab33068a085f5c03c82c18be1f61eba9
+  OCHamcrest: b464725bbb48d0f1cd9c6f4ec3cb35fe0c4f2b94
+  OCMockito: eca2670b3ce4a457d316b046a36d6f2b980a4da7
+  Primus: eeacd91fcca4e6aa8f70b0247074d6ba00983800
+  Reachability: 8e9635e3cb4f98e7f825e51147f677ecc694d0e7
+  Specta: 9141310f46b1f68b676650ff2854e1ed0b74163a
+  TPWeakProxy: a23251ba7fbe268c93f809cc072ef834f5063798
 
-COCOAPODS: 0.31.1
+COCOAPODS: 0.33.1

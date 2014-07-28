@@ -46,7 +46,7 @@
 		E5682C8118B50B4200F5D583 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E5682C8318B50B4200F5D583 /* PrimusEmitterTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrimusEmitterTest.m; sourceTree = "<group>"; };
 		E5682C8D18B50EF900F5D583 /* PrimusEmitterTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PrimusEmitterTests-Prefix.pch"; sourceTree = "<group>"; };
-		E5682C9D18B6328300F5D583 /* PrimusEmitter.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = PrimusEmitter.podspec; sourceTree = "<group>"; };
+		E58C3F7C1986A09500461CE7 /* PrimusEmitter.podspec.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = PrimusEmitter.podspec.json; sourceTree = "<group>"; };
 		E7E82B24E3224DD4A5BD17BB /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -81,7 +81,7 @@
 				E5682C7D18B50B4200F5D583 /* PrimusEmitterTests */,
 				E5682C6518B50B4200F5D583 /* Frameworks */,
 				E5682C6418B50B4200F5D583 /* Products */,
-				E5682C9D18B6328300F5D583 /* PrimusEmitter.podspec */,
+				E58C3F7C1986A09500461CE7 /* PrimusEmitter.podspec.json */,
 				8FFF4810252544D58B073C73 /* Pods.xcconfig */,
 				7F7C498F1AC244C5A7A7AD56 /* Pods-PrimusEmitterTests.xcconfig */,
 			);
