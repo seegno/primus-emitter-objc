@@ -17,7 +17,7 @@ typedef NS_ENUM(NSInteger, PrimusPacketType) {
 
 @interface PrimusEmitter : NSObject<PluginProtocol>
 {
-    NSObject<PrimusProtocol> *_primus;
+    NSObject<PrimusProtocol> * __unsafe_unretained _primus;
 }
 
 @end

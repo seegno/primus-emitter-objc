@@ -17,23 +17,21 @@
     if (self) {
         _primus = primus;
 
-        [self bindEvents];
+        [_primus on:@"data" selector:@selector(onData:raw:) target:self];
     }
 
     return self;
 }
 
-- (void)bindEvents
+- (void)onData:(NSDictionary *)packet raw:(id)raw
 {
-    [_primus on:@"data" listener:^(NSDictionary *packet, id raw) {
-        if (! [packet[@"type"] isKindOfClass:NSNumber.class]) {
-            return;
-        }
+    if (![packet[@"type"] isKindOfClass:NSNumber.class]) {
+        return;
+    }
 
-        if ([packet[@"type"] isEqualToNumber:@(kPrimusPacketTypeEvent)]) {
-            [self onEvent:packet];
-        }
-    }];
+    if ([packet[@"type"] isEqualToNumber:@(kPrimusPacketTypeEvent)]) {
+        [self onEvent:packet];
+    }
 }
 
 - (void)onEvent:(NSDictionary *)packet
