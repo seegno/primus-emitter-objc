@@ -1,536 +1,1112 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		63B73475DA79409A8FA149C0 /* libPods-PrimusEmitterTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 071B6693C1D3420EA9283F3C /* libPods-PrimusEmitterTests.a */; };
-		7A5F52FA15F2407F8AAA2119 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E7E82B24E3224DD4A5BD17BB /* libPods.a */; };
-		E5682C6718B50B4200F5D583 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5682C6618B50B4200F5D583 /* Cocoa.framework */; };
-		E5682C7118B50B4200F5D583 /* PrimusEmitter.m in Sources */ = {isa = PBXBuildFile; fileRef = E5682C7018B50B4200F5D583 /* PrimusEmitter.m */; };
-		E5682C7818B50B4200F5D583 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5682C7718B50B4200F5D583 /* XCTest.framework */; };
-		E5682C7918B50B4200F5D583 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5682C6618B50B4200F5D583 /* Cocoa.framework */; };
-		E5682C7C18B50B4200F5D583 /* PrimusEmitter.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E5682C6318B50B4200F5D583 /* PrimusEmitter.dylib */; };
-		E5682C8218B50B4200F5D583 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E5682C8018B50B4200F5D583 /* InfoPlist.strings */; };
-		E5682C8418B50B4200F5D583 /* PrimusEmitterTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E5682C8318B50B4200F5D583 /* PrimusEmitterTest.m */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		E5682C7A18B50B4200F5D583 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E5682C5B18B50B4200F5D583 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E5682C6218B50B4200F5D583;
-			remoteInfo = "Primus-Emitter";
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		071B6693C1D3420EA9283F3C /* libPods-PrimusEmitterTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PrimusEmitterTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7F7C498F1AC244C5A7A7AD56 /* Pods-PrimusEmitterTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrimusEmitterTests.xcconfig"; path = "Pods/Pods-PrimusEmitterTests.xcconfig"; sourceTree = "<group>"; };
-		8FFF4810252544D58B073C73 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
-		E5682C6318B50B4200F5D583 /* PrimusEmitter.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = PrimusEmitter.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
-		E5682C6618B50B4200F5D583 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
-		E5682C6918B50B4200F5D583 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		E5682C6A18B50B4200F5D583 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		E5682C6B18B50B4200F5D583 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
-		E5682C6E18B50B4200F5D583 /* PrimusEmitter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PrimusEmitter-Prefix.pch"; sourceTree = "<group>"; };
-		E5682C6F18B50B4200F5D583 /* PrimusEmitter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrimusEmitter.h; sourceTree = "<group>"; };
-		E5682C7018B50B4200F5D583 /* PrimusEmitter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrimusEmitter.m; sourceTree = "<group>"; };
-		E5682C7618B50B4200F5D583 /* PrimusEmitterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrimusEmitterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E5682C7718B50B4200F5D583 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		E5682C7F18B50B4200F5D583 /* PrimusEmitterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PrimusEmitterTests-Info.plist"; sourceTree = "<group>"; };
-		E5682C8118B50B4200F5D583 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		E5682C8318B50B4200F5D583 /* PrimusEmitterTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrimusEmitterTest.m; sourceTree = "<group>"; };
-		E5682C8D18B50EF900F5D583 /* PrimusEmitterTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PrimusEmitterTests-Prefix.pch"; sourceTree = "<group>"; };
-		E58C3F7C1986A09500461CE7 /* PrimusEmitter.podspec.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = PrimusEmitter.podspec.json; sourceTree = "<group>"; };
-		E7E82B24E3224DD4A5BD17BB /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		E5682C6018B50B4200F5D583 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E5682C6718B50B4200F5D583 /* Cocoa.framework in Frameworks */,
-				7A5F52FA15F2407F8AAA2119 /* libPods.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E5682C7318B50B4200F5D583 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E5682C7918B50B4200F5D583 /* Cocoa.framework in Frameworks */,
-				E5682C7C18B50B4200F5D583 /* PrimusEmitter.dylib in Frameworks */,
-				E5682C7818B50B4200F5D583 /* XCTest.framework in Frameworks */,
-				63B73475DA79409A8FA149C0 /* libPods-PrimusEmitterTests.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		E5682C5A18B50B4200F5D583 = {
-			isa = PBXGroup;
-			children = (
-				E5682C6C18B50B4200F5D583 /* PrimusEmitter */,
-				E5682C7D18B50B4200F5D583 /* PrimusEmitterTests */,
-				E5682C6518B50B4200F5D583 /* Frameworks */,
-				E5682C6418B50B4200F5D583 /* Products */,
-				E58C3F7C1986A09500461CE7 /* PrimusEmitter.podspec.json */,
-				8FFF4810252544D58B073C73 /* Pods.xcconfig */,
-				7F7C498F1AC244C5A7A7AD56 /* Pods-PrimusEmitterTests.xcconfig */,
-			);
-			sourceTree = "<group>";
-		};
-		E5682C6418B50B4200F5D583 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				E5682C6318B50B4200F5D583 /* PrimusEmitter.dylib */,
-				E5682C7618B50B4200F5D583 /* PrimusEmitterTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		E5682C6518B50B4200F5D583 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				E5682C6618B50B4200F5D583 /* Cocoa.framework */,
-				E5682C7718B50B4200F5D583 /* XCTest.framework */,
-				E5682C6818B50B4200F5D583 /* Other Frameworks */,
-				E7E82B24E3224DD4A5BD17BB /* libPods.a */,
-				071B6693C1D3420EA9283F3C /* libPods-PrimusEmitterTests.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		E5682C6818B50B4200F5D583 /* Other Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				E5682C6918B50B4200F5D583 /* Foundation.framework */,
-				E5682C6A18B50B4200F5D583 /* CoreData.framework */,
-				E5682C6B18B50B4200F5D583 /* AppKit.framework */,
-			);
-			name = "Other Frameworks";
-			sourceTree = "<group>";
-		};
-		E5682C6C18B50B4200F5D583 /* PrimusEmitter */ = {
-			isa = PBXGroup;
-			children = (
-				E5682C6F18B50B4200F5D583 /* PrimusEmitter.h */,
-				E5682C7018B50B4200F5D583 /* PrimusEmitter.m */,
-				E5682C6D18B50B4200F5D583 /* Supporting Files */,
-			);
-			path = PrimusEmitter;
-			sourceTree = "<group>";
-		};
-		E5682C6D18B50B4200F5D583 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				E5682C6E18B50B4200F5D583 /* PrimusEmitter-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		E5682C7D18B50B4200F5D583 /* PrimusEmitterTests */ = {
-			isa = PBXGroup;
-			children = (
-				E5682C7E18B50B4200F5D583 /* Supporting Files */,
-				E5682C8318B50B4200F5D583 /* PrimusEmitterTest.m */,
-			);
-			path = PrimusEmitterTests;
-			sourceTree = "<group>";
-		};
-		E5682C7E18B50B4200F5D583 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				E5682C8D18B50EF900F5D583 /* PrimusEmitterTests-Prefix.pch */,
-				E5682C7F18B50B4200F5D583 /* PrimusEmitterTests-Info.plist */,
-				E5682C8018B50B4200F5D583 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXHeadersBuildPhase section */
-		E5682C6118B50B4200F5D583 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
-/* Begin PBXNativeTarget section */
-		E5682C6218B50B4200F5D583 /* PrimusEmitter */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E5682C8718B50B4200F5D583 /* Build configuration list for PBXNativeTarget "PrimusEmitter" */;
-			buildPhases = (
-				87500785601B45878E9A1356 /* Check Pods Manifest.lock */,
-				E5682C5F18B50B4200F5D583 /* Sources */,
-				E5682C6018B50B4200F5D583 /* Frameworks */,
-				E5682C6118B50B4200F5D583 /* Headers */,
-				CDE8156C74AF4BB8929FDBBC /* Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = PrimusEmitter;
-			productName = "Primus-Emitter";
-			productReference = E5682C6318B50B4200F5D583 /* PrimusEmitter.dylib */;
-			productType = "com.apple.product-type.library.dynamic";
-		};
-		E5682C7518B50B4200F5D583 /* PrimusEmitterTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E5682C8A18B50B4200F5D583 /* Build configuration list for PBXNativeTarget "PrimusEmitterTests" */;
-			buildPhases = (
-				11BF0145FC984612B4B2FE29 /* Check Pods Manifest.lock */,
-				E5682C7218B50B4200F5D583 /* Sources */,
-				E5682C7318B50B4200F5D583 /* Frameworks */,
-				E5682C7418B50B4200F5D583 /* Resources */,
-				A4A451EFAF934261BD2FE594 /* Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E5682C7B18B50B4200F5D583 /* PBXTargetDependency */,
-			);
-			name = PrimusEmitterTests;
-			productName = "Primus-EmitterTests";
-			productReference = E5682C7618B50B4200F5D583 /* PrimusEmitterTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		E5682C5B18B50B4200F5D583 /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastUpgradeCheck = 0600;
-				ORGANIZATIONNAME = Seegno;
-				TargetAttributes = {
-					E5682C7518B50B4200F5D583 = {
-						TestTargetID = E5682C6218B50B4200F5D583;
-					};
-				};
-			};
-			buildConfigurationList = E5682C5E18B50B4200F5D583 /* Build configuration list for PBXProject "PrimusEmitter" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-			);
-			mainGroup = E5682C5A18B50B4200F5D583;
-			productRefGroup = E5682C6418B50B4200F5D583 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				E5682C6218B50B4200F5D583 /* PrimusEmitter */,
-				E5682C7518B50B4200F5D583 /* PrimusEmitterTests */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		E5682C7418B50B4200F5D583 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E5682C8218B50B4200F5D583 /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		11BF0145FC984612B4B2FE29 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		87500785601B45878E9A1356 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		A4A451EFAF934261BD2FE594 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-PrimusEmitterTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CDE8156C74AF4BB8929FDBBC /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-PrimusEmitterTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		E5682C5F18B50B4200F5D583 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E5682C7118B50B4200F5D583 /* PrimusEmitter.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E5682C7218B50B4200F5D583 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E5682C8418B50B4200F5D583 /* PrimusEmitterTest.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		E5682C7B18B50B4200F5D583 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E5682C6218B50B4200F5D583 /* PrimusEmitter */;
-			targetProxy = E5682C7A18B50B4200F5D583 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		E5682C8018B50B4200F5D583 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E5682C8118B50B4200F5D583 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
-/* Begin XCBuildConfiguration section */
-		E5682C8518B50B4200F5D583 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx;
-			};
-			name = Debug;
-		};
-		E5682C8618B50B4200F5D583 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				SDKROOT = macosx;
-			};
-			name = Release;
-		};
-		E5682C8818B50B4200F5D583 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7F7C498F1AC244C5A7A7AD56 /* Pods-PrimusEmitterTests.xcconfig */;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "PrimusEmitter/PrimusEmitter-Prefix.pch";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		E5682C8918B50B4200F5D583 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7F7C498F1AC244C5A7A7AD56 /* Pods-PrimusEmitterTests.xcconfig */;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "PrimusEmitter/PrimusEmitter-Prefix.pch";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		E5682C8B18B50B4200F5D583 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7F7C498F1AC244C5A7A7AD56 /* Pods-PrimusEmitterTests.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PrimusEmitter.dylib";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "PrimusEmitterTests/PrimusEmitterTests-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "PrimusEmitterTests/PrimusEmitterTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		E5682C8C18B50B4200F5D583 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7F7C498F1AC244C5A7A7AD56 /* Pods-PrimusEmitterTests.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PrimusEmitter.dylib";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "PrimusEmitterTests/PrimusEmitterTests-Prefix.pch";
-				INFOPLIST_FILE = "PrimusEmitterTests/PrimusEmitterTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		E5682C5E18B50B4200F5D583 /* Build configuration list for PBXProject "PrimusEmitter" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E5682C8518B50B4200F5D583 /* Debug */,
-				E5682C8618B50B4200F5D583 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E5682C8718B50B4200F5D583 /* Build configuration list for PBXNativeTarget "PrimusEmitter" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E5682C8818B50B4200F5D583 /* Debug */,
-				E5682C8918B50B4200F5D583 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E5682C8A18B50B4200F5D583 /* Build configuration list for PBXNativeTarget "PrimusEmitterTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E5682C8B18B50B4200F5D583 /* Debug */,
-				E5682C8C18B50B4200F5D583 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = E5682C5B18B50B4200F5D583 /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>071B6693C1D3420EA9283F3C</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods-PrimusEmitterTests.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>11BF0145FC984612B4B2FE29</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>405CF71F46BF2940E979DAF1</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods.release.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods/Pods.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>63B73475DA79409A8FA149C0</key>
+		<dict>
+			<key>fileRef</key>
+			<string>071B6693C1D3420EA9283F3C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6C606FF57F36E39B1641EC3F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-PrimusEmitterTests.debug.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-PrimusEmitterTests/Pods-PrimusEmitterTests.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7A5F52FA15F2407F8AAA2119</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E7E82B24E3224DD4A5BD17BB</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>87500785601B45878E9A1356</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>A0FA1B64A3A40E838ABB2B73</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods.debug.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods/Pods.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A4A451EFAF934261BD2FE594</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-PrimusEmitterTests/Pods-PrimusEmitterTests-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>B86512C77615342AC15FAAC1</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-PrimusEmitterTests.release.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-PrimusEmitterTests/Pods-PrimusEmitterTests.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CDE8156C74AF4BB8929FDBBC</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>D345206F23B870C0027A9824</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>A0FA1B64A3A40E838ABB2B73</string>
+				<string>405CF71F46BF2940E979DAF1</string>
+				<string>6C606FF57F36E39B1641EC3F</string>
+				<string>B86512C77615342AC15FAAC1</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E5682C5A18B50B4200F5D583</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>E5682C6C18B50B4200F5D583</string>
+				<string>E5682C7D18B50B4200F5D583</string>
+				<string>E5682C6518B50B4200F5D583</string>
+				<string>E5682C6418B50B4200F5D583</string>
+				<string>E58C3F7C1986A09500461CE7</string>
+				<string>D345206F23B870C0027A9824</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E5682C5B18B50B4200F5D583</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastUpgradeCheck</key>
+				<string>0600</string>
+				<key>ORGANIZATIONNAME</key>
+				<string>Seegno</string>
+				<key>TargetAttributes</key>
+				<dict>
+					<key>E5682C7518B50B4200F5D583</key>
+					<dict>
+						<key>TestTargetID</key>
+						<string>E5682C6218B50B4200F5D583</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>E5682C5E18B50B4200F5D583</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+			</array>
+			<key>mainGroup</key>
+			<string>E5682C5A18B50B4200F5D583</string>
+			<key>productRefGroup</key>
+			<string>E5682C6418B50B4200F5D583</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>E5682C6218B50B4200F5D583</string>
+				<string>E5682C7518B50B4200F5D583</string>
+			</array>
+		</dict>
+		<key>E5682C5E18B50B4200F5D583</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>E5682C8518B50B4200F5D583</string>
+				<string>E5682C8618B50B4200F5D583</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>E5682C5F18B50B4200F5D583</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>E5682C7118B50B4200F5D583</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>E5682C6018B50B4200F5D583</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>E5682C6718B50B4200F5D583</string>
+				<string>7A5F52FA15F2407F8AAA2119</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>E5682C6118B50B4200F5D583</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>E5682C6218B50B4200F5D583</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>E5682C8718B50B4200F5D583</string>
+			<key>buildPhases</key>
+			<array>
+				<string>87500785601B45878E9A1356</string>
+				<string>E5682C5F18B50B4200F5D583</string>
+				<string>E5682C6018B50B4200F5D583</string>
+				<string>E5682C6118B50B4200F5D583</string>
+				<string>CDE8156C74AF4BB8929FDBBC</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>PrimusEmitter</string>
+			<key>productName</key>
+			<string>Primus-Emitter</string>
+			<key>productReference</key>
+			<string>E5682C6318B50B4200F5D583</string>
+			<key>productType</key>
+			<string>com.apple.product-type.library.dynamic</string>
+		</dict>
+		<key>E5682C6318B50B4200F5D583</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>compiled.mach-o.dylib</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>PrimusEmitter.dylib</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>E5682C6418B50B4200F5D583</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>E5682C6318B50B4200F5D583</string>
+				<string>E5682C7618B50B4200F5D583</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E5682C6518B50B4200F5D583</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>E5682C6618B50B4200F5D583</string>
+				<string>E5682C7718B50B4200F5D583</string>
+				<string>E5682C6818B50B4200F5D583</string>
+				<string>E7E82B24E3224DD4A5BD17BB</string>
+				<string>071B6693C1D3420EA9283F3C</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E5682C6618B50B4200F5D583</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Cocoa.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/Cocoa.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>E5682C6718B50B4200F5D583</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E5682C6618B50B4200F5D583</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E5682C6818B50B4200F5D583</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>E5682C6918B50B4200F5D583</string>
+				<string>E5682C6A18B50B4200F5D583</string>
+				<string>E5682C6B18B50B4200F5D583</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Other Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E5682C6918B50B4200F5D583</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>E5682C6A18B50B4200F5D583</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>CoreData.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/CoreData.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>E5682C6B18B50B4200F5D583</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>AppKit.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/AppKit.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>E5682C6C18B50B4200F5D583</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>E5682C6F18B50B4200F5D583</string>
+				<string>E5682C7018B50B4200F5D583</string>
+				<string>E5682C6D18B50B4200F5D583</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>PrimusEmitter</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E5682C6D18B50B4200F5D583</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>E5682C6E18B50B4200F5D583</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E5682C6E18B50B4200F5D583</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>PrimusEmitter-Prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E5682C6F18B50B4200F5D583</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>PrimusEmitter.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E5682C7018B50B4200F5D583</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>PrimusEmitter.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E5682C7118B50B4200F5D583</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E5682C7018B50B4200F5D583</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E5682C7218B50B4200F5D583</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>E5682C8418B50B4200F5D583</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>E5682C7318B50B4200F5D583</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>E5682C7918B50B4200F5D583</string>
+				<string>E5682C7C18B50B4200F5D583</string>
+				<string>E5682C7818B50B4200F5D583</string>
+				<string>63B73475DA79409A8FA149C0</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>E5682C7418B50B4200F5D583</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>E5682C8218B50B4200F5D583</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>E5682C7518B50B4200F5D583</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>E5682C8A18B50B4200F5D583</string>
+			<key>buildPhases</key>
+			<array>
+				<string>11BF0145FC984612B4B2FE29</string>
+				<string>E5682C7218B50B4200F5D583</string>
+				<string>E5682C7318B50B4200F5D583</string>
+				<string>E5682C7418B50B4200F5D583</string>
+				<string>A4A451EFAF934261BD2FE594</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>E5682C7B18B50B4200F5D583</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>PrimusEmitterTests</string>
+			<key>productName</key>
+			<string>Primus-EmitterTests</string>
+			<key>productReference</key>
+			<string>E5682C7618B50B4200F5D583</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle.unit-test</string>
+		</dict>
+		<key>E5682C7618B50B4200F5D583</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>PrimusEmitterTests.xctest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>E5682C7718B50B4200F5D583</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>XCTest.framework</string>
+			<key>path</key>
+			<string>Library/Frameworks/XCTest.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>E5682C7818B50B4200F5D583</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E5682C7718B50B4200F5D583</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E5682C7918B50B4200F5D583</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E5682C6618B50B4200F5D583</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E5682C7A18B50B4200F5D583</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>E5682C5B18B50B4200F5D583</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>E5682C6218B50B4200F5D583</string>
+			<key>remoteInfo</key>
+			<string>Primus-Emitter</string>
+		</dict>
+		<key>E5682C7B18B50B4200F5D583</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>E5682C6218B50B4200F5D583</string>
+			<key>targetProxy</key>
+			<string>E5682C7A18B50B4200F5D583</string>
+		</dict>
+		<key>E5682C7C18B50B4200F5D583</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E5682C6318B50B4200F5D583</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E5682C7D18B50B4200F5D583</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>E5682C7E18B50B4200F5D583</string>
+				<string>E5682C8318B50B4200F5D583</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>PrimusEmitterTests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E5682C7E18B50B4200F5D583</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>E5682C8D18B50EF900F5D583</string>
+				<string>E5682C7F18B50B4200F5D583</string>
+				<string>E5682C8018B50B4200F5D583</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E5682C7F18B50B4200F5D583</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>PrimusEmitterTests-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E5682C8018B50B4200F5D583</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>E5682C8118B50B4200F5D583</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E5682C8118B50B4200F5D583</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E5682C8218B50B4200F5D583</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E5682C8018B50B4200F5D583</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E5682C8318B50B4200F5D583</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>PrimusEmitterTest.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E5682C8418B50B4200F5D583</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E5682C8318B50B4200F5D583</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E5682C8518B50B4200F5D583</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_ENABLE_OBJC_EXCEPTIONS</key>
+				<string>YES</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>MACOSX_DEPLOYMENT_TARGET</key>
+				<string>10.9</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>SDKROOT</key>
+				<string>macosx</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>E5682C8618B50B4200F5D583</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf-with-dsym</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_ENABLE_OBJC_EXCEPTIONS</key>
+				<string>YES</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>MACOSX_DEPLOYMENT_TARGET</key>
+				<string>10.9</string>
+				<key>SDKROOT</key>
+				<string>macosx</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>E5682C8718B50B4200F5D583</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>E5682C8818B50B4200F5D583</string>
+				<string>E5682C8918B50B4200F5D583</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>E5682C8818B50B4200F5D583</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>A0FA1B64A3A40E838ABB2B73</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>COMBINE_HIDPI_IMAGES</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(PLATFORM_DIR)/Developer/Library/Frameworks</string>
+					<string>$(DEVELOPER_LIBRARY_DIR)/Frameworks</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>PrimusEmitter/PrimusEmitter-Prefix.pch</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>E5682C8918B50B4200F5D583</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>405CF71F46BF2940E979DAF1</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>COMBINE_HIDPI_IMAGES</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(PLATFORM_DIR)/Developer/Library/Frameworks</string>
+					<string>$(DEVELOPER_LIBRARY_DIR)/Frameworks</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>PrimusEmitter/PrimusEmitter-Prefix.pch</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>E5682C8A18B50B4200F5D583</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>E5682C8B18B50B4200F5D583</string>
+				<string>E5682C8C18B50B4200F5D583</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>E5682C8B18B50B4200F5D583</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>6C606FF57F36E39B1641EC3F</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(BUILT_PRODUCTS_DIR)/PrimusEmitter.dylib</string>
+				<key>COMBINE_HIDPI_IMAGES</key>
+				<string>YES</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(PLATFORM_DIR)/Developer/Library/Frameworks</string>
+					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>PrimusEmitterTests/PrimusEmitterTests-Prefix.pch</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>INFOPLIST_FILE</key>
+				<string>PrimusEmitterTests/PrimusEmitterTests-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUNDLE_LOADER)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>xctest</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>E5682C8C18B50B4200F5D583</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>B86512C77615342AC15FAAC1</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(BUILT_PRODUCTS_DIR)/PrimusEmitter.dylib</string>
+				<key>COMBINE_HIDPI_IMAGES</key>
+				<string>YES</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(PLATFORM_DIR)/Developer/Library/Frameworks</string>
+					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>PrimusEmitterTests/PrimusEmitterTests-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>PrimusEmitterTests/PrimusEmitterTests-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUNDLE_LOADER)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>xctest</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>E5682C8D18B50EF900F5D583</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>PrimusEmitterTests-Prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E58C3F7C1986A09500461CE7</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.json</string>
+			<key>path</key>
+			<string>PrimusEmitter.podspec.json</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E7E82B24E3224DD4A5BD17BB</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>E5682C5B18B50B4200F5D583</string>
+</dict>
+</plist>
