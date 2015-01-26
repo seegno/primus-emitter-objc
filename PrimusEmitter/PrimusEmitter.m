@@ -6,7 +6,21 @@
 //  Copyright (c) 2014 Seegno. All rights reserved.
 //
 
+#import <Primus/Primus.h>
+
 #import "PrimusEmitter.h"
+
+@implementation Primus (Emitter)
+
+- (void)send:(NSString *)event data:(id)data
+{
+    [self write:@{
+        @"type": @(kPrimusPacketTypeEvent),
+        @"data": @[event, data]
+    }];
+}
+
+@end
 
 @implementation PrimusEmitter
 

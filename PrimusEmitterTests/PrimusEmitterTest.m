@@ -35,6 +35,21 @@ describe(@"Primus-Emitter", ^{
     });
 
     it(@"should emit event", ^AsyncBlock {
+        [primus on:@"outgoing::data" listener:^(NSData *data) {
+            NSDictionary *packet = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:nil];
+
+            expect(packet[@"type"]).to.equal(@(kPrimusPacketTypeEvent));
+            expect(packet[@"data"]).to.equal(@[@"news", @"hello"]);
+
+            done();
+        }];
+
+        [primus emit:@"incoming::open"];
+
+        [primus send:@"news" data:@"hello"];
+    });
+
+    it(@"should support strings", ^AsyncBlock {
         [primus on:@"news" listener:^(id data) {
             expect(data).to.equal(@"hello");
 
@@ -47,7 +62,7 @@ describe(@"Primus-Emitter", ^{
         }];
     });
 
-    it(@"should emit object", ^AsyncBlock {
+    it(@"should support objects", ^AsyncBlock {
         NSDictionary *object = @{ @"hi": @"hello", @"num": @(123456) };
 
         [primus on:@"news" listener:^(id data) {
