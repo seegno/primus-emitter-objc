@@ -1,6 +1,6 @@
 {
   "name": "PrimusEmitter",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "summary": "Simple emitter wrapper for primus-objc",
   "homepage": "https://github.com/seegno/primus-emitter-objc",
   "authors": "Seegno",
@@ -10,7 +10,7 @@
   },
   "source": {
     "git": "https://github.com/seegno/primus-emitter-objc.git",
-    "tag": "0.0.4"
+    "tag": "0.0.5"
   },
   "source_files": [
     "PrimusEmitter/*.{h,m}",
