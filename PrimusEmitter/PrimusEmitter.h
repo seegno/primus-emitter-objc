@@ -15,6 +15,12 @@ typedef NS_ENUM(NSInteger, PrimusPacketType) {
     kPrimusPacketTypeAck
 };
 
+@interface Primus (Emitter)
+
+- (void)send:(NSString *)event data:(id)data;
+
+@end
+
 @interface PrimusEmitter : NSObject<PluginProtocol>
 {
     NSObject<PrimusProtocol> * __unsafe_unretained _primus;
